@@ -8,7 +8,7 @@ namespace TaskManager_Radosteva.Models
     public class Tasks : Notification
     {
         public int Id { get; set; }
-        private string name;
+        private string name = "";
         public string Name
         {
             get { return name; } 
@@ -24,7 +24,7 @@ namespace TaskManager_Radosteva.Models
                 }
             }
         }
-        private string priority;
+        private string priority = "";
         public string Priority
         {
             get { return priority; } 
@@ -56,7 +56,7 @@ namespace TaskManager_Radosteva.Models
                 }
             }
         }
-        private string comment;
+        private string comment = "";
         public string Comment
         {
             get { return comment; } 
