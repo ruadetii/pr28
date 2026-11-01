@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager_Radosteva.Classes;
+﻿using TaskManager_Radosteva.Classes;
 
 namespace TaskManager_Radosteva.ViewModels
 {
@@ -14,7 +9,7 @@ namespace TaskManager_Radosteva.ViewModels
         {
             MainWindow.init.frame.Navigate(new View.Main(vm_tasks));
         }
-        public RealyCommand OnClose() 
+        public RealyCommand OnClose 
         {
             get {
                 return new RealyCommand(obj => {
